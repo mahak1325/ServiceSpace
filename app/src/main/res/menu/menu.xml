@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/homeFragment2"
+        android:icon="@drawable/baseline_add_home_24"/>
+    <item android:title="Cart"
+        android:id="@+id/cartFragment2"
+        android:icon="@drawable/baseline_add_shopping_cart_24" />
+    <item android:title="Search"
+        android:id="@+id/searchFragment2"
+        android:icon="@drawable/search" />
+    <item android:title="History"
+        android:id="@+id/historyFragment2"
+        android:icon="@drawable/history" />
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"/>
+</menu>

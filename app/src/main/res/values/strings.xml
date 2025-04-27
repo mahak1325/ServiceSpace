@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Service Space</string>
+    <string name="next">Next</string>
+    <string name="service_space">Service Space</string>
+    <string name="provide_fast_services">Provide Fast Services</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="email">Email</string>
+    <string name="design_by_mahkir">Design By Mahkir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_information">Save Information</string>
+</resources>
