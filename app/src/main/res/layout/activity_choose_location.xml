@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ChooseLocationActivity">
 
     <TextView
@@ -21,19 +22,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="57dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:background="@drawable/edittext"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
-        android:background="@drawable/edittext"
         app:endIconDrawable="@drawable/baseline_arrow_circle_down_24"
         app:endIconTint="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
 
         <AutoCompleteTextView
             android:id="@+id/listOfLocation"
@@ -72,4 +73,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Done"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bluebutton"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

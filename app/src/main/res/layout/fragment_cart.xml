@@ -22,9 +22,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cartRecyclerView"
         android:layout_width="409dp"
-        android:layout_height="621dp"
+        android:layout_height="570dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
@@ -33,10 +32,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/proceedButton"
         android:layout_width="325dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/proceedbuttonshape"
         android:fontFamily="@font/yeon_sung"
         android:text="Proceed"
@@ -44,9 +44,8 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cartRecyclerView"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintVertical_bias="0.21" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

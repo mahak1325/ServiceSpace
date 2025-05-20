@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragment.HistoryFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -26,7 +27,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -44,13 +45,29 @@
                     android:id="@+id/orderedStatus"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginEnd="32dp"
+                    android:layout_marginEnd="28dp"
                     app:cardBackgroundColor="#03A9F4"
                     app:cardCornerRadius="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.266">
 
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/receivedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/addtocartshape"
+                    android:fontFamily="@font/yeon_sung"
+                    android:text="Received"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/orderedStatus"
+                    app:layout_constraintStart_toStartOf="@+id/orderedStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/orderedStatus" />
                 <ImageView
                     android:id="@+id/buyAgainFoodImage"
                     android:layout_width="62dp"

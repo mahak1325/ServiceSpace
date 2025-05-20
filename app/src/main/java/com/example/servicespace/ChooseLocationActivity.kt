@@ -1,5 +1,6 @@
 package com.example.servicespace
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
@@ -14,11 +15,16 @@ class ChooseLocationActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(binding.root)
         val locationList= arrayOf("Jaipur","Odisha","Bundi","Sikar")
         val adapter=ArrayAdapter(this,android.R.layout.simple_list_item_1,locationList)
         val autoCompleteTextView=binding.listOfLocation
         autoCompleteTextView.setAdapter(adapter)
+        binding.Done.setOnClickListener{
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
+
+
